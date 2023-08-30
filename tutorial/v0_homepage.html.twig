@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home | {{ parent() }}{% endblock %}
+
+{% block body %}
+
+    <h1>{{ title }}</h1>
+
+    {#             {{ 'to say something' }}        #}
+    {# For a comment #}
+    {#      {% %} is for do something     #}
+
+
+    <div>
+        Our track list: TODO
+        {# Need to loop over the array tracks to print it #}
+
+        Tracks:
+        <ul>
+            {% for track in tracks %} 
+                <li>
+                    {{ track.song }} - {{ track.artist }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}
