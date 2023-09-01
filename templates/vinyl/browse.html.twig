@@ -37,7 +37,8 @@
                         <span>{{ mix.genre }}</span>
                         |
                         {# To visualize the date posted : <span>{{ mix.createdAt|date( 'd-m-Y' ) }}</span> #}
-                        <span>{{ mix.createdAt|date( 'd-m-Y' ) }}</span>
+                        {# using a Bundle : <span>{{ mix.ago }}</span> #}
+                        <span>{{ mix.createdAt|ago }}</span> {# using a Twig filter #}
                     </div>
                 </div>
 
